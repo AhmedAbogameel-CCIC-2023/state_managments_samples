@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'views/nav_bar/view.dart';
 import 'views/register/view.dart';
 
 void main() {
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: RegisterView(),
+      home: NavBarView(),
     );
     // return BlocProvider(
     //   create: (context) => HomeCubit(),
